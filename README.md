@@ -50,3 +50,147 @@ CL-ARROWS library is potentially useful for building the queries:
    (-> (all-users)
       (and-where '(:= status "married"))))
 ```
+
+## Functions
+
+### and-where
+
+```lisp
+(statement expression)
+```
+
+Add an AND clause to the WHERE clause of SQL STATEMENT
+
+
+
+### fields+
+
+```lisp
+(statement &rest fields)
+```
+
+Add FIELDS to the SELECT SQL STATEMENT
+
+
+
+### fields=
+
+```lisp
+(statement fields)
+```
+
+Set the FIELDS of the SELECT SQL STATEMENT
+
+
+
+### from+
+
+```lisp
+(statement &rest tables)
+```
+
+Add TABLES to the FROM clause of the SQL STATEMENT
+
+
+
+### from=
+
+```lisp
+(statement &rest tables)
+```
+
+Set the FROM clause of the SQL STATEMENT
+
+
+
+### group-by+
+
+```lisp
+(statement &rest expressions)
+```
+
+Add expressions to the GROUP BY  clause of the SQL STATEMENT
+
+
+
+
+
+### group-by=
+
+```lisp
+(statement &rest expressions)
+```
+
+Set the GROUP BY clause of the SQL statement
+
+
+
+### limit=
+
+```lisp
+(statement count1 &optional count2)
+```
+
+Set the LIMIT clause of the SQL STATEMENT
+
+
+
+
+
+### offset=
+
+```lisp
+(statement offset)
+```
+
+Set the OFFSET clause of the SQL STATEMENT
+
+
+
+### or-where
+
+```lisp
+(statement expression)
+```
+
+Add an OR clause to the WHERE clause of SQL STATEMENT
+
+
+
+### order-by+
+
+```lisp
+(statement &rest expressions)
+```
+
+Add EXPRESSIONS ot the ORDER BY clause of the SQL STATEMENT
+
+
+
+### order-by=
+
+```lisp
+(statement &rest expressions)
+```
+
+Set the ORDER BY clause of the SQL STATEMENT
+
+
+
+### returning=
+
+```lisp
+(statement expression)
+```
+
+Set the RETURNING clause of SQL STATEMENT
+
+
+
+### where=
+
+```lisp
+(statement expression)
+```
+
+Set SQL WHERE clause of the SQL STATEMENT
