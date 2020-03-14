@@ -1,4 +1,4 @@
-(in-package :sxql.composer)
+(in-package :sxql-composer)
 
 (defun expand-op (object)
   (if (and (listp object)

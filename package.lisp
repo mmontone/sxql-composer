@@ -1,4 +1,4 @@
-(defpackage :sxql.composer
+(defpackage :sxql-composer
   (:use :cl)
   (:export :and-where
            :or-where
